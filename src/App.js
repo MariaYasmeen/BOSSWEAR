@@ -4,12 +4,14 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 
 import './App.css';
-import Home from './Pages/Home';
+import Home from './Pages/Home'; 
 
 function App() {
   return (
     <div className="App">
-     <div className="gradient-bg  align-items-center vh-100">
+     <div
+      // className="gradient-bg  align-items-center vh-100"
+      >
      <Home />
     </div>
     </div>
