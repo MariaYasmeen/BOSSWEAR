@@ -1,17 +1,16 @@
 import React from "react";
 
 const navLinks = [
-  { name: "Home", path: "#", active: true },
-  { name: "Link", path: "#" },
-  { name: "Dropdown", dropdown: ["Action", "Another action", "Something else here"] },
-  { name: "Disabled", path: "#", disabled: true },
-];
+  { name: "HOME", path: "#", active: true },
+  { name: "LINK", path: "#" },
+  { name: "DROPDOWN", dropdown: ["Action", "Another action", "Something else here"] },
+ ];
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg py-4 px-4 bg-transparent">
       <div className="container-fluid">
-        <a className="navbar-brand mx-3" href="#">Navbar</a>
+        <a className="navbar-brand mx-4" href="#">BOSSWEAR</a>
         <button
           className="navbar-toggler"
           type="button"
