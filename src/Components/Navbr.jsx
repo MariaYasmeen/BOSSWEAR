@@ -33,7 +33,7 @@ const Navbar = () => {
                   <ul className="dropdown-menu">
                     {link.dropdown.map((item, i) => (
                       <li key={i}>
-                        <a className="dropdown-item" href="#">{item}</a>
+                            <a className="btn dropdown-item px-4 py-2 btn-outline-dark rounded-pill" href="#">{item}</a>
                       </li>
                     ))}
                   </ul>

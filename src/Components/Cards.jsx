@@ -3,11 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Cards = () => {
   return (
-    <div className="px-4 bg-black py-4">
+    <div className="px-4 bg-black py-5 " style={{ borderRadius: "50px 50px 0 0"}}>
       <div className="row g-3">
         {/* Large Vertical Card */}
         <div className="col-lg-3 col-md-6">
-          <div className="card h-100">
+          <div className="card h-100" style={{border:"none"}}>
             <img
               src="/aa.png"
               className="card-img-top"
@@ -18,6 +18,8 @@ const Cards = () => {
               <p className="card-text">
               Unleash your style potential with top-tier menswear for every occasion.
               </p>
+              <a className="btn px-4 py-2 btn-outline-dark rounded-pill" href="#">SHOP NOW</a>
+
             </div>
           </div>
         </div>
@@ -40,7 +42,7 @@ const Cards = () => {
 
         {/* Wide Image Card */}
         <div className="col-lg-6 col-md-12">
-          <div className="card">
+          <div className="card" style={{border:"none"}}>
             <img
               src="/A.png"
               className="card-img-top"
@@ -48,7 +50,7 @@ const Cards = () => {
             />
             <div className="card-body">
               <h5 className="card-title">Confidence starts with great fashion—shop classic and contemporary menswear.</h5>
-              <p className="card-text">Discover men’s fashion that speaks confidence.</p>
+              <a className="btn px-5 py-2 btn-outline-dark rounded-pill" href="#">SHOP NOW</a>
             </div>
           </div>
         </div>
@@ -58,7 +60,8 @@ const Cards = () => {
           <div className="card bg-light p-3  h-60">
             <blockquote className="blockquote mb-0">
               <h3 style={{padding:"12px"}}>Upgrade your wardrobe with <cite> premium fashion!</cite> Shop stylish, trendy, and sophisticated menswear online – <cite> elegance delivered to your doorstep.</cite> </h3>
-              <h4 style={{padding:"12px"}}>Redefine your style with premium menswear—shop timeless fashion online now!<cite> modern gentlemen!</cite> </h4>
+              <h4 style={{padding:"12px"}}>Redefine your style with premium.</h4>
+              <a className="btn px-4 py-2 btn-outline-dark rounded-pill" href="#">SHOP NOW</a>
 
             </blockquote>
           </div>
@@ -77,7 +80,7 @@ const Cards = () => {
 
         {/* Another Vertical Image Card */}
         <div className="col-lg-3 col-md-6">
-          <div className="card h-100">
+          <div className="card h-100" style={{border:"none"}}>
             <img
               src=" /7.png"
               className="card-img-top"
@@ -86,6 +89,7 @@ const Cards = () => {
             <div className="card-body">
               <h5 className="card-title">Shop contemporary menswear.</h5>
             </div>
+            
           </div>
         </div>
 
