@@ -30,12 +30,12 @@ const Marquee = () => {
 
   return (
     <div className="marquee-container">
-           <hr className="line" /> {/* Top Line */}
+           <hr className="line" />  
       <div className={`marquee ${scrollDirection}`}>
-        <span>CONFIDENCE WORN BOLD ✦ WE ARE BOSSWEAR ✦ </span>
-        <span>CONFIDENCE WORN BOLD ✦ WE ARE BOSSWEAR ✦ </span>
+        <span>WE ARE BOSSWEAR ✦ WE ARE BOSSWEAR ✦ </span>
+        <span>WE ARE BOSSWEAR ✦ WE ARE BOSSWEAR ✦ </span>
       </div>
-      <hr className="line" /> {/* Top Line */}
+      <hr className="line" />  
     </div>
   );
 };
