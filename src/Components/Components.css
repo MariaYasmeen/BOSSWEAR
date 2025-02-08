@@ -92,3 +92,10 @@
     }
   }
   
+
+  .h3css{
+    font-size: 39px;
+    padding: 4px;
+    font-weight: 800;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }

@@ -3,21 +3,20 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Cards = () => {
   return (
-    <div className="container py-4">
+    <div className="px-4 bg-black py-4">
       <div className="row g-3">
         {/* Large Vertical Card */}
         <div className="col-lg-3 col-md-6">
           <div className="card h-100">
             <img
-              src="/6.jpg"
+              src="/aa.png"
               className="card-img-top"
               alt="Vertical Image"
             />
             <div className="card-body">
-              <h5 className="card-title">Vertical Card Someone famous inSomeone famous inSomeone famous in</h5>
+              <h5 className="card-title">Where fashion meets elegance—premium styles crafted for the modern man.</h5>
               <p className="card-text">
-                A taller card with more content inside. Ideal for detailed
-                descriptions.
+              Unleash your style potential with top-tier menswear for every occasion.
               </p>
             </div>
           </div>
@@ -25,13 +24,17 @@ const Cards = () => {
 
         {/* Square Text Card */}
         <div className="col-lg-3 col-md-6">
-          <div className="card p-3 bg-dark h-100">
+          <div className="card p-3 bg-light  h-100">
             <blockquote className="blockquote mb-0">
-              <p>"Inspiration comes from within yourself."</p>
-              <footer className="blockquote-footer">
-                Someone famous in Someone famous inSomeone famous inSomeone famous inSomeone famous inSomeone famous inSomeone famous inSomeone famous in <cite>Source Title</cite>
-              </footer>
+               <h3 className="h3css">Refined Fashion for the  <cite>Modern Gentleman.</cite></h3>
+               <p style={{fontSize: "15px", paddingBottom:"3px"}}>"Inspiration comes from within yourself."</p>
+
             </blockquote>
+            <img
+              src="/bb.png"
+              className="card-img-top"
+              alt="Vertical Image"
+            />
           </div>
         </div>
 
@@ -39,25 +42,24 @@ const Cards = () => {
         <div className="col-lg-6 col-md-12">
           <div className="card">
             <img
-              src="/a.png"
+              src="/A.png"
               className="card-img-top"
               alt="Wide Image"
             />
             <div className="card-body">
-              <h5 className="card-title">Wide Image Card</h5>
-              <p className="card-text">A wide card for better UI balance.</p>
+              <h5 className="card-title">Confidence starts with great fashion—shop classic and contemporary menswear.</h5>
+              <p className="card-text">Discover men’s fashion that speaks confidence.</p>
             </div>
           </div>
         </div>
 
         {/* Highlighted Quote Card */}
         <div className="col-lg-4 col-md-6">
-          <div className="card bg-primary p-3 text-white h-60">
+          <div className="card bg-light p-3  h-60">
             <blockquote className="blockquote mb-0">
-              <p>"Success is not Someone famous inSomeone famous inSomeone famous inSomeone famous inSomeone famous inSomeone famous inSomeone famous inSomeone famous inSomeone famous inSomeone famous inSomeone famous in final, failure is not fatal."</p>
-              <footer className="blockquote-footer text-white">
-                Someone famous in <cite>Source Title</cite>
-              </footer>
+              <h3 style={{padding:"12px"}}>Upgrade your wardrobe with <cite> premium fashion!</cite> Shop stylish, trendy, and sophisticated menswear online – <cite> elegance delivered to your doorstep.</cite> </h3>
+              <h4 style={{padding:"12px"}}>Redefine your style with premium menswear—shop timeless fashion online now!<cite> modern gentlemen!</cite> </h4>
+
             </blockquote>
           </div>
         </div>
@@ -66,7 +68,7 @@ const Cards = () => {
         <div className="col-lg-2 col-md-4">
           <div className="card">
             <img
-              src="/6.jpg"
+              src="/6.png"
               className="card-img-top"
               alt="Small Image"
             />
@@ -77,23 +79,21 @@ const Cards = () => {
         <div className="col-lg-3 col-md-6">
           <div className="card h-100">
             <img
-              src=" /7.jpg"
+              src=" /7.png"
               className="card-img-top"
               alt="Tall Image"
             />
             <div className="card-body">
-              <h5 className="card-title">Another Tall Card</h5>
+              <h5 className="card-title">Shop contemporary menswear.</h5>
             </div>
           </div>
         </div>
 
         {/* Standard Text Card */}
         <div className="col-lg-3 col-md-6">
-          <div className="card p-3 bg-dark h-100">
-            <h5 className="card-title">Simple Text Card</h5>
-            <p className="card-text">
-              A small text card to balance the layout.
-            </p>
+          <div className="card p-3 bg-light h-100">
+            <h5 className="h3css">Dress sharp, live bold! Explore trendy and <cite> sophisticated outfits</cite>  for men.</h5>
+ 
           </div>
         </div>
 
@@ -105,9 +105,7 @@ const Cards = () => {
               className="card-img-top"
               alt="Full Width Image"
             />
-            <div className="card-body">
-              <h5 className="card-title">Full Width Image</h5>
-            </div>
+ 
           </div>
         </div>
       </div>
