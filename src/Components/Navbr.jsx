@@ -6,8 +6,6 @@ const navLinks = [
   { name: "MENSWEAR", path: "#" },
   { name: "COLLECTIONS", dropdown: ["Action", "Another action", "Something else here"] },
   { name: "KIDS", path: "#" },
- 
-
 ];
 
 const Navbar = () => {
@@ -40,12 +38,12 @@ const Navbar = () => {
       animate={scrollDirection === "down" ? { opacity: 0, y: -50 } : { opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       style={{
-        backgroundColor: "transparent", // No foggy effect
-       }}
+        backgroundColor: "transparent",
+      }}
     >
       <div className="container-fluid">
         <div className="d-flex align-items-center w-100">
-          <a className="navbar-brand mx-4" href="#" style={{ zIndex: 10, fontSize:"29px" }}>
+          <a className="navbar-brand mx-4" href="#" style={{ zIndex: 10, fontSize: "29px" }}>
             BOSSWEAR
           </a>
           <button
@@ -56,6 +54,7 @@ const Navbar = () => {
             aria-controls="navbarScroll"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style={{ outline: "none", boxShadow: "none" }} // Removes focus
           >
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -63,7 +62,7 @@ const Navbar = () => {
 
         <div
           className="collapse navbar-collapse p-2 shadow-lg"
-          id="navbarScroll" 
+          id="navbarScroll"
           style={{
             borderRadius: "23px",
             backgroundColor: "white",
@@ -97,8 +96,12 @@ const Navbar = () => {
             )}
           </ul>
           <form className="d-flex mx-3">
-            <input className="form-control me-2" style = {{borderRadius:"23px"}} type="search" placeholder="Search" />
-            
+            <input
+              className="form-control me-2"
+              style={{ borderRadius: "23px", outline: "none", boxShadow: "none" }} // Removes focus
+              type="search"
+              placeholder="Search"
+            />
           </form>
         </div>
       </div>
