@@ -15,28 +15,27 @@ const Posterimages = ["/img1.png", "/img2.png", "/img3.png"];
 const posterImages = ["/img6.png", "/img4.png", "/img8.png"];
 
 const blogPosts = [
-  { title: "Sample blog post", date: "January 1, 2021", author: "Mark" },
-  { title: "Sample blog post", date: "January 1, 2021", author: "Mark" },
-  { title: "Sample blog post", date: "January 1, 2021", author: "Mark" },
-  { title: "Sample blog post", date: "January 1, 2021", author: "Mark" },
-  { title: "Sample blog post", date: "January 1, 2021", author: "Mark" },
+  { title: "Formal Ware"  },
+  { title: "Business Casual Wear"  },
+  { title: "Casual Wear" },
+  { title: "Ethnic & Traditional Wear"  },
+  { title: "Party & Streetwear"  },,
+  { title: "Sports & Activewear"  },
 ];
 
 const featuredPosts = [
   {
-    category: "World",
+    category: "NEW ARRIVALS",
     categoryClass: "text-primary-emphasis",
-    title: "Featured post",
-    date: "Nov 12",
-    description: "This is a wider card with supporting text below as a natural lead-in to additional content.",
+    title: "MEN'S CASUAL WEAR", 
+    description: "Discover our latest collection, now available online and in stores, featuring premium designs to elevate your wardrobe.",
     image: "/img4.png",
   },
   {
-    category: "Design",
+    category: "NEW ARRIVALS",
     categoryClass: "text-success-emphasis",
-    title: "Post title",
-    date: "Nov 11",
-    description: "This is a wider card with supporting text below as a natural lead-in to additional content.",
+    title: "PARTY & STREATWEAR", 
+    description: "Step into the world of refined fashion with our latest arrivals, designed for those who appreciate quality and elegance.",
     image: "/img5.png",
   },
 ];
@@ -93,7 +92,7 @@ const About = () => {
                   <h3 className="mb-0">{post.title}</h3>
                   <div className="mb-1 text-body-secondary">{post.date}</div>
                   <p className="mb-auto">{post.description}</p>
-                  <a className="btn px-4 py-2 btn-outline-dark rounded-pill" href="#">SHOP NOW</a>
+                  <a className="btn px-4 py-2 btn-outline-dark rounded-pill" href="#">NEW ARRIVALS</a>
                 </div>
                 <div className="col-md-4">
                   <img className="featurette-image img-fluid mx-auto" width="250" height="250" src={post.image} alt={post.title} />
@@ -123,25 +122,25 @@ const About = () => {
 
       <div className="row g-5 py-4">
         <div className="col-md-8">
-          <motion.a
-            className="btn px-4 btn-outline-dark rounded-pill"
-            href="#"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            SHOP NOW
-          </motion.a>
+
 
           <article className="blog-post">
             <motion.h2
-              className="display-5 link-body-emphasis mb-1"
+              className="display-5 link-body-emphasis mb-1 px-4"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Sample blog post
+              EXPERIENCE FASHION LIKE NEVER BEFORE.
             </motion.h2>
-            <p className="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+            <div  className="display-5 link-body-emphasis mb-1 px-4"
+            >   <motion.a
+            className="btn py-2 px-4 btn-outline-dark rounded-pill "
+            href="#"
+          >
+            SEE NEW COLLECTIONS
+          </motion.a></div>
+          
             <hr />
             
             <div className="row justify-content-center text-center g-4">
@@ -190,12 +189,12 @@ const About = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h4 className="fst-italic">About</h4>
-              <p className="mb-0">Customize this section to tell your visitors about your publication.</p>
+              <h4 className="fst-italic">Happening Now</h4>
+              <p className="mb-0">Get 50% OFF On all Products this Valentien's Day ! Happy Shopping for Loved Ones!</p>
             </motion.div>
 
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-              <h4 className="fst-italic">Recent posts</h4>
+              <h4 className="fst-italic">RECENT OUTS</h4>
               <ul className="list-unstyled">
                 {blogPosts.map((post, index) => (
                   <motion.li 
@@ -204,11 +203,8 @@ const About = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                   >
-                    <h2 className="display-5 link-body-emphasis mb-1">{post.title}</h2>
-                    <p className="blog-post-meta">
-                      {post.date} by <a href="#">{post.author}</a>
-                    </p>
-                    <hr />
+                    <p className="display-5  ">{post.title}</p>
+                     <hr />
                   </motion.li>
                 ))}
               </ul>
@@ -239,7 +235,7 @@ const About = () => {
           </motion.a>
         </div>
       </motion.div>
-      
+
       </main>
     </>
   );

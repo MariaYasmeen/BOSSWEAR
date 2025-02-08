@@ -81,15 +81,32 @@
   }
   
   /* Responsive font sizes */
-  @media (max-width: 768px) {
-    .marquee {
-      font-size: 2.5rem;
+  @media (max-width: 1093px) {
+    .marquee {    margin: -75px !important;
+
+      font-size: 8.5rem;
     }
+    .marquee-container {
+      height: 270px; /* Increased height */
+    } 
+    .line { 
+      height: 3px; /* Line thickness */
+      background-color: rgb(250, 246, 246);
+      margin: 39px 0; /* Space around lines */
+    } 
   }
-  @media (max-width: 480px) {
+  @media (max-width: 493px) {
     .marquee {
-      font-size: 2rem;
+      margin: -245px !important;
+
+      font-size: 6.5rem;
     }
+    .marquee-container {
+      height: 200px; /* Increased height */
+    } 
+    .line {  
+      margin: 109px 0; /* Space around lines */
+    } 
   }
   
 

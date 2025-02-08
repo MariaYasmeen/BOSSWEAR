@@ -3,8 +3,11 @@ import { motion } from "framer-motion";
 
 const navLinks = [
   { name: "HOME", path: "#", active: true },
-  { name: "LINK", path: "#" },
-  { name: "DROPDOWN", dropdown: ["Action", "Another action", "Something else here"] },
+  { name: "MENSWEAR", path: "#" },
+  { name: "COLLECTIONS", dropdown: ["Action", "Another action", "Something else here"] },
+  { name: "KIDS", path: "#" },
+ 
+
 ];
 
 const Navbar = () => {
@@ -60,9 +63,9 @@ const Navbar = () => {
 
         <div
           className="collapse navbar-collapse p-2 shadow-lg"
-          id="navbarScroll"
+          id="navbarScroll" 
           style={{
-            borderRadius: "21px",
+            borderRadius: "23px",
             backgroundColor: "white",
             width: "100%",
           }}
@@ -94,10 +97,8 @@ const Navbar = () => {
             )}
           </ul>
           <form className="d-flex mx-3">
-            <input className="form-control me-2" type="search" placeholder="Search" />
-            <motion.button className="btn btn-outline-success" type="submit" whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-              Search
-            </motion.button>
+            <input className="form-control me-2" style = {{borderRadius:"23px"}} type="search" placeholder="Search" />
+            
           </form>
         </div>
       </div>
