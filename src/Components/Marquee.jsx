@@ -13,12 +13,12 @@ const Marquee = () => {
       clearTimeout(timeout);
       timeout = setTimeout(() => {
         if (window.scrollY > lastScrollY) {
-          setScrollDirection("left"); // Scroll Down → Text moves Right
+          setScrollDirection("left");  
         } else {
-          setScrollDirection("right"); // Scroll Up → Text moves Left
+          setScrollDirection("right");  
         }
         lastScrollY = window.scrollY;
-      }, 300); // Soft delay of 300ms
+      }, 300);  
     };
 
     window.addEventListener("scroll", handleScroll);
