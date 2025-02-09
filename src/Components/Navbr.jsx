@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 const navLinks = [
   { name: "HOME", path: "#", active: true },
   { name: "MENSWEAR", path: "#" },
-  { name: "COLLECTIONS", dropdown: ["Action", "Another action", "Something else here"] },
+  { name: "COLLECTIONS", dropdown: ["Formal Ware", "Business Casual Wear", "Casual Wear", "Ethnic & Traditional Wear","Party & Streetwear", "Sports & Activewear" ] },
   { name: "KIDS", path: "#" },
 ];
-
+ 
 const Navbar = () => {
   const [scrollDirection, setScrollDirection] = useState(null);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -78,7 +78,7 @@ const Navbar = () => {
                   </a>
                   <ul className="dropdown-menu">
                     {link.dropdown.map((item, i) => (
-                      <motion.li key={i} whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
+                      <motion.li key={i} >
                         <a className="btn dropdown-item px-4 py-2 btn-outline-dark rounded-pill" href="#">
                           {item}
                         </a>
@@ -87,7 +87,7 @@ const Navbar = () => {
                   </ul>
                 </li>
               ) : (
-                <motion.li key={index} className="nav-item mx-3" whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
+                <motion.li key={index} className="nav-item mx-3" whileHover={{ scale: 1 }} transition={{ duration: 0.3 }}>
                   <a className={`nav-link ${link.active ? "active" : ""}`} href={link.path}>
                     {link.name}
                   </a>

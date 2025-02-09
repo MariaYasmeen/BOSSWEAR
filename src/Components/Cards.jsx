@@ -42,7 +42,7 @@ const Cards = () => {
             <img src="/A.png" className="card-img-top" alt="Wide Image" />
             <div className="card-body">
               <h5 className="card-title">Confidence starts with great fashion—shop classic and contemporary menswear.</h5>
-              <a className="btn px-5 py-2 btn-outline-dark rounded-pill" href="#">SHOP NOW</a>
+              <a className="btn px-5 py-2 btn-outline-dark rounded-pill" href="#">QUICK VIEW</a>
             </div>
           </div>
         </motion.div>
@@ -53,7 +53,7 @@ const Cards = () => {
             <blockquote className="blockquote mb-0">
               <h3 style={{padding:"12px"}}>Upgrade your wardrobe with <cite> premium fashion!</cite> Shop stylish, trendy, and sophisticated menswear online – <cite> elegance delivered to your doorstep.</cite> </h3>
               <h4 style={{padding:"12px"}}>Redefine your style with premium.</h4>
-              <a className="btn px-4 py-2 btn-outline-dark rounded-pill" href="#">SHOP NOW</a>
+              <a className="btn px-4 py-2 btn-outline-dark rounded-pill" href="#">TOP COLLECTIONS</a>
             </blockquote>
           </div>
         </motion.div>

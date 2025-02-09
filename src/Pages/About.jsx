@@ -202,8 +202,7 @@ const About = () => {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                  >
-                    <p className="display-5  ">{post.title}</p>
+                  > <a className="btn px-5 py-2 btn-outline-dark rounded-pill" href="#">{post.title}</a>
                      <hr />
                   </motion.li>
                 ))}
