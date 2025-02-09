@@ -18,11 +18,11 @@
 
   .marquee-container {
     width: 100%;
-    height: 390px; /* Increased height */
+    height: 390px; 
     overflow: hidden;
     background: linear-gradient(-45deg, #424141, #2c2c2c, #070001,#757272,  #070001 );
   background-size: 300% 300%; padding: 70px 0px;
-    border-radius: 50px 50px 0 0; /* Rounded top corners */
+    border-radius: 50px 50px 0 0;  
     animation: gradientMove 3s ease infinite;
 
   }
@@ -36,41 +36,38 @@
   .marquee {
     display: flex;
     white-space: nowrap; 
-    font-size: 16rem; /* Big text */
+    font-size: 16rem;  
     text-transform: uppercase;
-    word-spacing: 10px ; /* Reduce space between words */
-    letter-spacing: -7px; /* Reduce space between letters */
+    word-spacing: 10px ;  
+    letter-spacing: -7px;  
     color: #fff;
-    transition: transform 1s ease-in-out; /* Soft transition */
+    transition: transform 1s ease-in-out; 
     padding: 0px !important;
     margin: -75px !important;
   }
   
   .line {
     width: 100%;
-    height: 3px; /* Line thickness */
+    height: 3px; 
     background-color: rgb(250, 246, 246);
-    margin: 2px 0; /* Space around lines */
+    margin: 2px 0;  
   }
 
   
-  /* No spacing between repeating text */
-  .marquee span {
+   .marquee span {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
     display: inline-block;
     padding-right: 1rem;
   }
   
-  /* Direction-based animations */
-  .marquee.right {
+   .marquee.right {
     animation: marquee-right 10s linear infinite;
   }
   .marquee.left {
     animation: marquee-left 10s linear infinite;
   }
   
-  /* Soft marquee animations */
-  @keyframes marquee-left {
+   @keyframes marquee-left {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
@@ -87,12 +84,12 @@
       font-size: 8.5rem;
     }
     .marquee-container {
-      height: 270px; /* Increased height */
+      height: 270px;  
     } 
     .line { 
-      height: 3px; /* Line thickness */
+      height: 3px;   
       background-color: rgb(250, 246, 246);
-      margin: 39px 0; /* Space around lines */
+      margin: 39px 0;  
     } 
   }
   @media (max-width: 493px) {
@@ -102,10 +99,10 @@
       font-size: 6.5rem;
     }
     .marquee-container {
-      height: 200px; /* Increased height */
+      height: 200px;  
     } 
     .line {  
-      margin: 109px 0; /* Space around lines */
+      margin: 109px 0;  
     } 
   }
   
