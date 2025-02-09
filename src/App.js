@@ -10,8 +10,7 @@ import Home from './Pages/Home';
 function App() {
   return (
     <div className="App">
-     <div
-      // className="gradient-bg  align-items-center vh-100"
+     <div 
       >
      <Home />
     </div>
